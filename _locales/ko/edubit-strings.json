@@ -1,0 +1,19 @@
+{
+    "edubit.Servo|block": "서보|%index|각도 %degree",
+    "edubit.GeekServo|block": "긱 서보|서보|%index|각도 %degree",
+    "edubit.GeekServo2KG|block": "긱 서보|2KG서보|%index|각도 %degree",
+    "edubit.StepperDegree|block": "步進 28BYJ-48|%index|角度 %degree",
+    "edubit.StepperTurn|block": "步進 28BYJ-48|%index|圈數 %turn",
+    "edubit.StepperDual|block": "雙步進(角度) |M1 %degree1| M2 %degree2",
+    "edubit.StpCarMove|block": "步進小車 前進 |距離(cm) %distance|輪直徑(mm) %diameter",
+    "edubit.StpCarTurn|block": "步進小車 轉向 |角度 %turn|輪直徑(mm) %diameter|輪距(mm) %track",
+    "edubit.MotorRun|block": "馬達|%index|速度 %speed",
+    "edubit.MotorRunDual|block": "馬達|%motor1|速度 %speed1|%motor2|速度 %speed2",
+    "edubit.MotorRunDelay|block": "馬達|%index|速度 %speed|延時 %delay|s",
+    "edubit.MotorStop|block": "馬達 停止|%index|",
+    "edubit.MotorStopAll|block": "停止所有馬達",
+    "edubit.RgbUltrasonic|block": "貓耳RGB超聲波|腳位 %pin",
+    "edubit.HoleUltrasonic|block": "貓耳洞超聲波|腳位 %pin",
+    "edubit.MatrixDraw|block": "LED矩陣 描點|X %x|Y %y",
+    "edubit.MatrixClear|block": "清空 LED矩陣"
+}
