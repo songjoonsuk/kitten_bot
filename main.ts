@@ -6,7 +6,7 @@ load dependency
 */
 
 
-//% color="#000000" weight=100 icon="\uf013"
+//% color="#ff9900" weight=100 icon="\uf013"
 namespace edubit {
     const PCA9685_ADDRESS = 0x40
     const MODE1 = 0x00
