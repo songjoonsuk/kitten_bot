@@ -218,16 +218,16 @@ namespace edubit {
         return neoStrip;
     }
 
-    
+ 
 
-    //% blockId=robotbit_servo block="test on|pin %pin"
+    //% blockId=robotbit_servo block="test pin on|pin %pin"
     //% weight=109
     export function test_Pin_on ( pin: DigitalPin  ): void {
         pins.setPull(pin, PinPullMode.PullNone);
         pins.digitalWritePin(pin, 1);
     }
 
-    //% blockId=robotbit_servo block="test off|pin %pin"
+    //% blockId=robotbit_servo block="test pin off|pin %pin"
     //% weight=110
     export function test_Pin_off ( pin: DigitalPin  ): void {
         pins.setPull(pin, PinPullMode.PullNone);
