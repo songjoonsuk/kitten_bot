@@ -47,13 +47,7 @@ namespace edubit {
     const HT16K33_CMD_BRIGHTNESS = 0xE0
 
 
-    export enum Pn {
-       _0 = DigitalPin.P0, 
-       _1 = DigitalPin.P1, 
-       _2 = DigitalPin.P2 
-
-    }
-
+    
     export enum Servos {
         S1 = 0x01,
         S2 = 0x02,
@@ -226,12 +220,20 @@ namespace edubit {
 
     
 
-    //% blockId=robotbit_servo block="Pin|%index|value %value"
-    //% weight=120
-    export function test_Pin ( index: Pn, value: number  ): void {
-
-        pins.digitalWritePin(DigitalPin.Pn, value)
+    //% blockId=robotbit_servo block="test on|pin %pin"
+    //% weight=119
+    export function test_Pin_on ( pin: DigitalPin  ): void {
+        pins.setPull(pin, PinPullMode.PullNone);
+        pins.digitalWritePin(pin, 1);
     }
+
+     //% blockId=robotbit_servo block="test off|pin %pin"
+    //% weight=120
+    export function test_Pin_off ( pin: DigitalPin  ): void {
+        pins.setPull(pin, PinPullMode.PullNone);
+        pins.digitalWritePin(pin, 0);
+    }
+
 
     /**
      * Servo Execute
