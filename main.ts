@@ -220,14 +220,14 @@ namespace edubit {
 
  
 
-    //% blockId=robotbit_servo block="test pin on|pin %pin"
+    //% blockId=robotbit_pin_on block="test pin on|pin %pin"
     //% weight=109
     export function test_Pin_on ( pin: DigitalPin  ): void {
         pins.setPull(pin, PinPullMode.PullNone);
         pins.digitalWritePin(pin, 1);
     }
 
-    //% blockId=robotbit_servo block="test pin off|pin %pin"
+    //% blockId=robotbit_pin_off block="test pin off|pin %pin"
     //% weight=110
     export function test_Pin_off ( pin: DigitalPin  ): void {
         pins.setPull(pin, PinPullMode.PullNone);
