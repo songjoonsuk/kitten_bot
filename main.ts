@@ -46,6 +46,14 @@ namespace edubit {
     const HT16K33_BLINK_HALFHZ = 3
     const HT16K33_CMD_BRIGHTNESS = 0xE0
 
+
+    export enum Pn {
+       _0 = DigitalPin.P0, 
+       _1 = DigitalPin.P1, 
+       _2 = DigitalPin.P2 
+
+    }
+
     export enum Servos {
         S1 = 0x01,
         S2 = 0x02,
@@ -214,6 +222,15 @@ namespace edubit {
         }
 
         return neoStrip;
+    }
+
+    
+
+    //% blockId=robotbit_servo block="Pin|%index|value %value"
+    //% weight=120
+    export function test_Pin ( index: Pn, value: number  ): void {
+
+        pins.digitalWritePin(DigitalPin.Pn, value)
     }
 
     /**
